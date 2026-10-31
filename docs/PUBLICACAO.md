@@ -2,7 +2,7 @@
 
 Repositório: https://github.com/luigiscofano/usp-pcs3225-sistemas-digitais
 
-Organização atual de 31/10/2026, sem datas retroativas ou revisões fictícias.
+Edição organizada em 31/10/2026. As branches registram entregas atuais e permanecem acessíveis após integração.
 
 | PR | Branch | Entrega |
 | --- | --- | --- |
@@ -10,5 +10,10 @@ Organização atual de 31/10/2026, sem datas retroativas ou revisões fictícias
 | [#2](https://github.com/luigiscofano/usp-pcs3225-sistemas-digitais/pull/2) | `feat/aplicacoes-e-acervo` | Adicionar calculadora e nucleo didatico RISC-V |
 | [#3](https://github.com/luigiscofano/usp-pcs3225-sistemas-digitais/pull/3) | `test/verificacao-automatica` | Adicionar testes executaveis e GitHub Actions |
 | [#4](https://github.com/luigiscofano/usp-pcs3225-sistemas-digitais/pull/4) | `docs/objetivos-e-arquitetura` | Documentar objetivos pedagogicos, arquitetura e procedencia |
+| [#5](https://github.com/luigiscofano/usp-pcs3225-sistemas-digitais/pull/5) | `docs/evidencia-da-ci` | Registrar validacao remota e artefatos reproduziveis |
+| [#6](https://github.com/luigiscofano/usp-pcs3225-sistemas-digitais/pull/6) | `docs/conversor-bcd` | Guia de Double-Dabble e leitura de formas de onda |
+| [#7](https://github.com/luigiscofano/usp-pcs3225-sistemas-digitais/pull/7) | `docs/calculadora-programavel` | Guia da calculadora e de sua ISA de estudo |
 
-Esta entrega acrescenta evidência remota confirmada: [execução aprovada](https://github.com/luigiscofano/usp-pcs3225-sistemas-digitais/actions/runs/41227733916). O registro estruturado está em [validacao-remota.json](validacao-remota.json).
+[Mapa de branches](BRANCHES.md) · [Guias por assunto](topicos/README.md) · [Todos os PRs](https://github.com/luigiscofano/usp-pcs3225-sistemas-digitais/pulls?q=is%3Apr)
+
+A integração de cada PR pode ser conferida no GitHub. A evidência funcional e o commit correspondente estão em [VALIDACAO.md](VALIDACAO.md).

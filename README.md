@@ -32,6 +32,8 @@ Ambiente: **SystemVerilog 2012, Icarus Verilog 12+ e Python 3.12**. [Instalaçã
 
 ## Encontre cada parte
 
+**[Guias por assunto](docs/topicos/README.md) · [Mapa de branches](docs/BRANCHES.md) · [PRs e entregas](docs/PUBLICACAO.md)**
+
 | Diretório | Conteúdo |
 | --- | --- |
 | [rtl/](rtl/README.md) | Módulos de hardware agrupados por experimento. |
