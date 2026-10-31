@@ -1,0 +1,6 @@
+{
+  "passou": true,
+  "comando": "python scripts/verificar.py",
+  "saida": "VCD info: dumpfile build/double_dabble.vcd opened for output.\nPASS: 1005 conversoes W18, 256 W8, reset, handshake e calculadora\ntests/digitais_tb.sv:37: $finish called at 450700000 (1ps)\nPASS: RV32I subset, memoria, branches, saltos, x0, imediato negativo e traps\ntests/riscv_tb.sv:37: $finish called at 380000 (1ps)\n",
+  "data_usuario": "2026-10-31"
+}
