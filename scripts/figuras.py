@@ -25,7 +25,7 @@ for line in vcd.read_text(encoding="utf-8").splitlines():
             mudancas[p[1]].append((tempo, p[0][1:]))
 limite = 400000  # picosegundos: reset, captura e conversão do exemplo 42.
 svg = [
-    '<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="410" viewBox="0 0 1200 410"><rect width="1200" height="410" fill="#101c2e"/><text x="25" y="30" fill="white" font-size="19" font-family="sans-serif">Double-Dabble · captura real do exemplo 42</text>'
+    '<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440"><rect width="1200" height="440" fill="#101c2e"/><text x="25" y="30" fill="white" font-size="19" font-family="sans-serif">Double-Dabble · captura real do exemplo 42</text>'
 ]
 
 
@@ -64,6 +64,16 @@ for row, (code, nome) in enumerate(nomes.items()):
                 svg.append(
                     f'<text x="{x(t)+3:.2f}" y="{y+4}" fill="#dce8ff" font-family="monospace" font-size="11">{label}</text>'
                 )
+# A última janela de WAIT é curta: destaca valores realmente lidos do VCD.
+ultimos = {}
+for code, nome in nomes.items():
+    validos = [v for t, v in mudancas[code] if t <= limite and re.fullmatch("[01]+", v)]
+    if validos:
+        ultimos[nome] = int(validos[-1], 2)
+rodape = f"Últimos valores válidos da captura: BCD=0x{ultimos['bcd']:X}; done={ultimos['done']}; state={ultimos['state']} (WAIT)"
+svg.append(
+    f'<text x="25" y="430" fill="#dce8ff" font-family="sans-serif" font-size="15">{html.escape(rodape)}</text>'
+)
 svg.append("</svg>")
 (root / "assets").mkdir(exist_ok=True)
 (root / "assets/double_dabble_42.svg").write_text("".join(svg), encoding="utf-8")

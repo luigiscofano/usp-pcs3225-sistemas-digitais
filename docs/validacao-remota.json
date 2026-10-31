@@ -1,0 +1,20 @@
+{
+  "data_usuario": "2026-10-31",
+  "run_id": 41227733916,
+  "run_url": "https://github.com/luigiscofano/usp-pcs3225-sistemas-digitais/actions/runs/41227733916",
+  "commit": "3691c5b369180a029171565ae9d36600696f04d8",
+  "conclusao": "success",
+  "jobs": [
+    {
+      "nome": "testes (ubuntu-24.04)",
+      "conclusao": "success"
+    }
+  ],
+  "artefatos": [
+    {
+      "nome": "evidencia-ubuntu-24.04",
+      "url": "https://github.com/luigiscofano/usp-pcs3225-sistemas-digitais/actions/runs/41227733916/artifacts/13052671215",
+      "expira_em": "2027-01-29T18:06:10Z"
+    }
+  ]
+}
