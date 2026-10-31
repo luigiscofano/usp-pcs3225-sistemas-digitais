@@ -13,6 +13,7 @@ Edição organizada em 31/10/2026. As branches registram entregas atuais e perma
 | [#5](https://github.com/luigiscofano/usp-pcs3225-sistemas-digitais/pull/5) | `docs/evidencia-da-ci` | Registrar validacao remota e artefatos reproduziveis |
 | [#6](https://github.com/luigiscofano/usp-pcs3225-sistemas-digitais/pull/6) | `docs/conversor-bcd` | Guia de Double-Dabble e leitura de formas de onda |
 | [#7](https://github.com/luigiscofano/usp-pcs3225-sistemas-digitais/pull/7) | `docs/calculadora-programavel` | Guia da calculadora e de sua ISA de estudo |
+| [#8](https://github.com/luigiscofano/usp-pcs3225-sistemas-digitais/pull/8) | `docs/nucleo-riscv` | Guia de formatos RISC-V, memória e traps |
 
 [Mapa de branches](BRANCHES.md) · [Guias por assunto](topicos/README.md) · [Todos os PRs](https://github.com/luigiscofano/usp-pcs3225-sistemas-digitais/pulls?q=is%3Apr)
 
