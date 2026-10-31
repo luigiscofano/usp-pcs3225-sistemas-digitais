@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module double_dabble #(parameter W=18,parameter DIGITS=(W*30103)/100000+1)(
  input wire clk,rst,start,input wire [W-1:0] binary,
  output wire done,output reg [4*DIGITS-1:0] bcd,output wire [1:0] state_debug);
