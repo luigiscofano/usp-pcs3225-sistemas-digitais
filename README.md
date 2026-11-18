@@ -14,9 +14,20 @@ Reúne três estudos de **Sistemas Digitais II — PCS3225**. O conversor transf
 
 ## Qual problema resolve
 
+<details>
+<summary>Expandir qual problema resolve</summary>
+
 O projeto torna observável o caminho entre algoritmo e sinais: o que deve ser armazenado em registradores, qual ação a máquina de estados libera a cada clock e como uma instrução altera dados ou controle. Testbenches aplicam estímulos e verificam resultados; arquivos VCD guardam os sinais para inspeção.
 
+
+</details>
+
+---
+
 ## Funcionalidades e módulos
+
+<details>
+<summary>Expandir funcionalidades e módulos</summary>
 
 | Projeto independente | Entrada → saída | Código |
 | --- | --- | --- |
@@ -42,7 +53,15 @@ Implementa ADDI, ADD, SUB, AND, OR, XOR, LW, SW, BEQ, BNE, LUI, AUIPC, JAL e JAL
 
 É um subconjunto didático, **não RV32I completo ou certificado**. Não há pipeline, cache, interrupções, CSRs, privilégios ou espera no barramento. Não depende da ISA da calculadora anterior.
 
+
+</details>
+
+---
+
 ## Como executar
+
+<details>
+<summary>Expandir como executar</summary>
 
 **Requisitos:** Python 3.12, Icarus Verilog 12+ (`iverilog` e `vvp` no PATH), Git. GTKWave é opcional para inspecionar o VCD. Não é necessário possuir placa FPGA.
 
@@ -72,13 +91,29 @@ Observe reset, `start`, alternância CORRECT/SHIFT e a chegada a `done`. O SVG p
 
 No Windows, use uma instalação compatível do Icarus ou um terminal WSL com as ferramentas no PATH. Se `python` não existir, use `python3`. Os scripts não instalam o simulador nem o GTKWave.
 
+
+</details>
+
+---
+
 ## O que desenvolvi e aprendi
+
+<details>
+<summary>Expandir o que desenvolvi e aprendi</summary>
 
 As implementações desta edição relacionam conversão numérica, máquinas de estados, bancos de registradores, ULA, controle e formatos de instrução. Os testes e a geração de figuras conectam a explicação ao sinal observado. A [procedência](docs/PROCEDENCIA.md) distingue temas acadêmicos recuperados e decisões novas.
 
 **Objetivos pedagógicos:** rastrear a conversão de 42, explicar o handshake, seguir uma instrução da ROM até a escrita e provocar uma falha controlada com uma palavra ilegal. [Atividades e rubrica](docs/OBJETIVOS_PEDAGOGICOS.md).
 
+
+</details>
+
+---
+
 ## Estado atual
+
+<details>
+<summary>Expandir estado atual</summary>
 
 | Disponível | Limite / evolução |
 | --- | --- |
@@ -87,23 +122,60 @@ As implementações desta edição relacionam conversão numérica, máquinas de
 | Núcleo e programas de teste | Subconjunto de 14 instruções |
 | VCD, SVG e testes | Sem síntese, pinagem, timing ou ensaio em FPGA nesta edição |
 
+
+</details>
+
+---
+
 ## Validação e limites
+
+<details>
+<summary>Expandir validação e limites</summary>
 
 Há 1.005 conversões de 18 bits, teste exaustivo das 256 entradas de 8 bits, reset/handshake, programa da calculadora e cenários do núcleo. A simulação não constitui cobertura completa de ISA ou certificação física. A [validação](docs/VALIDACAO.md) explicita os casos exercitados.
 
 O repositório [usp-labdig](https://github.com/luigiscofano/usp-labdig) contém os experimentos de Laboratório Digital e seus jogos; este concentra conversão e arquitetura de processadores da disciplina PCS3225.
 
+
+</details>
+
+---
+
 ## Documentação e navegação
+
+<details>
+<summary>Expandir documentação e navegação</summary>
 
 [RTL](rtl/README.md) · [Testbenches](tests/README.md) · [Scripts](scripts/README.md) · [Formas de onda](assets/README.md) · [Guias por projeto](docs/topicos/README.md) · [Documentação](docs/README.md) · [Arquitetura e ISA](docs/ARQUITETURA.md) · [Branches](docs/BRANCHES.md) · [PRs](docs/PUBLICACAO.md)
 
 
+
+</details>
+
+---
+
 ## Autoria, referências e licença
+
+<details>
+<summary>Expandir autoria, referências e licença</summary>
 
 **Luigi Scofano de Araujo · Engenharia de Computação, Poli-USP · USP 13680334.** Fontes recuperados, componentes de terceiros e trabalhos em grupo mantêm os créditos indicados nos arquivos e na documentação.
 
 [Direitos e créditos](DIREITOS_E_CREDITOS.md) · [Procedência](docs/PROCEDENCIA.md) · [Como contribuir](CONTRIBUTING.md) · [Mudanças](CHANGELOG.md)
 
+
+</details>
+
+---
+
 ## Tópicos do repositório
 
+<details>
+<summary>Expandir tópicos do repositório</summary>
+
 `systemverilog` · `digital-design` · `double-dabble` · `bcd` · `risc-v` · `rv32i` · `datapath` · `finite-state-machine` · `icarus-verilog` · `computer-architecture` · `usp`
+
+</details>
+
+---
+
